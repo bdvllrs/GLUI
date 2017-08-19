@@ -98,6 +98,8 @@ The classes `success`, `error`, `default` and `warning` are available.
 ```html
 <button class="btn"></button>
 ```
+Also `success`, `error`, `warning`, `default` and `dark`.
+
 ### Tooltip
 ```html
 <div class="tooltip">
