@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9ff0813-a0e2-4848-9880-cd66e2b0e793" name="Default" comment="" />
+    <list default="true" id="c9ff0813-a0e2-4848-9880-cd66e2b0e793" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,12 +27,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/components/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="310">
               <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="589">
+                <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+                <folding>
+                  <marker date="1503164147826" expanded="true" signature="255:369" ph="..." />
+                  <marker date="1503164147826" expanded="true" signature="569:594" ph="..." />
+                  <marker date="1503164147826" expanded="true" signature="915:991" ph="..." />
+                  <marker date="1503164147826" expanded="true" signature="941:974" ph="..." />
+                  <marker date="1503164147826" expanded="true" signature="1157:1188" ph="..." />
+                  <marker date="1503164147826" expanded="true" signature="1328:1351" ph="..." />
+                  <marker date="1503164147826" expanded="true" signature="1803:1879" ph="..." />
+                  <marker date="1503164147826" expanded="true" signature="2032:2128" ph="..." />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -61,8 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/js/components/forms/Input.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/js/components/forms/Select.js" />
         <option value="$PROJECT_DIR$/src/js/components/forms/Textarea.js" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -112,6 +144,8 @@
         <option value="$PROJECT_DIR$/src/js/components/App.js" />
         <option value="$PROJECT_DIR$/src/scss/variables/_navbar.scss" />
         <option value="$PROJECT_DIR$/src/scss/_navbar.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -164,74 +198,6 @@
             <path>
               <item name="gridLayout" type="b2602c69:ProjectViewProjectNode" />
               <item name="gridLayout" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="gridLayout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gridLayout" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="gridLayout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gridLayout" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="gridLayout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gridLayout" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="fonts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="gridLayout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gridLayout" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="gridLayout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gridLayout" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="gridLayout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gridLayout" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="gridLayout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gridLayout" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="gridLayout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gridLayout" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="gridLayout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gridLayout" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="switchers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="gridLayout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gridLayout" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="gridLayout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gridLayout" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="variables" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -329,12 +295,12 @@
       <workItem from="1502811688942" duration="4000" />
       <workItem from="1502811725130" duration="55000" />
       <workItem from="1502811794410" duration="7311000" />
-      <workItem from="1503153524991" duration="1581000" />
+      <workItem from="1503153524991" duration="1886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111406000" />
+    <option name="totallyTimeSpent" value="111711000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -499,6 +465,34 @@
         <state relative-caret-position="310">
           <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="589">
+            <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+            <folding>
+              <marker date="1503164147826" expanded="true" signature="255:369" ph="..." />
+              <marker date="1503164147826" expanded="true" signature="569:594" ph="..." />
+              <marker date="1503164147826" expanded="true" signature="915:991" ph="..." />
+              <marker date="1503164147826" expanded="true" signature="941:974" ph="..." />
+              <marker date="1503164147826" expanded="true" signature="1157:1188" ph="..." />
+              <marker date="1503164147826" expanded="true" signature="1328:1351" ph="..." />
+              <marker date="1503164147826" expanded="true" signature="1803:1879" ph="..." />
+              <marker date="1503164147826" expanded="true" signature="2032:2128" ph="..." />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
