@@ -53,12 +53,12 @@ export default class App extends Component {
                     </aside>
                 </SwitcherClass>
                 {/*<div className="messages">*/}
-                {/*<Message timer>*/}
-                {/*<strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit. Animi architecto*/}
-                {/*atque beatae*/}
-                {/*consequuntur cum ducimus ea eos eum inventore, ipsa odio quae quam, qui quod quos recusandae*/}
-                {/*tempora totam voluptatem!*/}
-                {/*</Message>*/}
+                <Message timer>
+                    <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit. Animi architecto
+                    atque beatae
+                    consequuntur cum ducimus ea eos eum inventore, ipsa odio quae quam, qui quod quos recusandae
+                    tempora totam voluptatem!
+                </Message>
                 {/*<Message success timer>*/}
                 {/*<strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit. Animi architecto*/}
                 {/*atque beatae*/}

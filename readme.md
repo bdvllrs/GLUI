@@ -3,15 +3,110 @@
 React boilerplate with CSS template using Grids.
 
 ## Style components
+Most of the style can be edited using the scss variables in the `src/scss/variables/` folder.
+
 ### Grid Container
+```html
+<div class="container grid-container">
+    ...
+</div>
+```
+### Navbar
+
+```html
+<div class="navbar">
+    <ul class="menu">
+        <li><a href="#">Menu</a></li>
+        <li><a href="#" class="active">Menu</a></li>
+    </ul>
+</div>
+```
+
+### Content
+
+`<main class="content"></div>`
+
 ### Message
+Message notification. Use the Message React component.
+```html
+<div class="message">
+    <p>Content</p>
+</div>
+```
+The classes `success`, `error`, `warning` and `default` can also be used.
 ### Form
+```html
+<form>
+    <div class="form-group">
+        <label>Some label</label>
+        <input />
+    </div>
+</form>
+```
+
+Also `<form class="vertical"></form>`.
 ### Table
+```html
+<table>
+    ...
+</table>
+```
+For stripped rows, use the `stripped` class name.
 ### Panel
+```html
+<div class="panel">
+    <div class="panel-heading">
+        Heading
+    </div>
+    <div class="panel-body">
+        Content
+    </div>
+</div>
+```
+The classes `success`, `error`, `default` and `warning` are available.
+
 ### Card
+```html
+<div class="cards">
+    <div class="card">
+        <div class="card-heading"></div>
+        <div class="card-content"></div>
+        <ul class="card-list"></ul>
+    </div>
+    <div class="card large">
+        <div class="card-heading"></div>
+        <div class="card-content"></div>
+        <ul class="card-list"></ul>
+    </div>
+</div>
+
+```
 ### Dropdown
+```html
+<div class="dropdown">
+    <div class="dropdown-container">
+        <a href="#">Click here</a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Some link</a></li>
+            <li><a href="#">Some link</a></li>
+        </ul>
+    </div>
+</div>
+```
+
 ### Buttons
+```html
+<button class="btn"></button>
+```
 ### Tooltip
+```html
+<div class="tooltip">
+    text
+    <div class="tooltip-body">
+        Content
+    </div>
+</div> 
+```
 
 ## React Components
 
@@ -63,7 +158,7 @@ The tooltip appears on the bottom.
 ```
 
 #### Props
- - `error`, `success`, `warning`, `default'
+ - `error`, `success`, `warning`, `default`
  - `timer` value in sec before the message is hidden
  
 ### Forms
