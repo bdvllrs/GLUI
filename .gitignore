@@ -65,3 +65,4 @@ typings/
 dist
 
 Supprimerait src/images/open-iconic-master/font/
+/public/assets/
