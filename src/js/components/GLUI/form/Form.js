@@ -12,7 +12,9 @@ export default class Form extends Component {
     }
 
     onChange(id, value, success = true, message = null) {
-        this.props.onChange(id, value, success, message);
+        if(this.props.onChange) {
+            this.props.onChange(id, value, success, message);
+        }
         let elements = this.state.elements;
         elements[id] = value;
         let inputElems = this.props.children;
@@ -51,11 +53,17 @@ export default class Form extends Component {
 
     componentWillMount() {
         let elements = [];
-        this.props.children.forEach((input) => {
-            if (input.props.id) {
-                elements[input.props.id] = input.props.value;
+        if (this.props.children.length > 0) {
+            this.props.children.forEach((input) => {
+                if (input.props.id) {
+                    elements[input.props.id] = input.props.value;
+                }
+            });
+        } else if (this.props.children !== undefined) {
+            if (this.props.children.props.id) {
+                elements[this.props.children.props.id] = this.props.children.props.value;
             }
-        });
+        }
         const inputs = this.props.children.map((input) => {
             if (input.props.id) {
                 return cloneElement(input, {
@@ -70,7 +78,7 @@ export default class Form extends Component {
 
     render() {
         return (
-            <form action={this.props.action} method={this.props.method} className="vertical">
+            <form action={this.props.action} method={this.props.method} className={this.props.vertical ? 'vertical' : ''}>
                 {this.state.inputs}
 
                 <div className="form-actions">

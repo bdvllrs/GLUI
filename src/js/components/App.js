@@ -1,15 +1,16 @@
 import React, {Component} from 'react';
-import Dropdown from "./dropdown/Dropdown";
-import Form from "./form/Form";
-import Input from "./form/Input";
-import Select from "./form/Select";
-import Tooltip from "./Tooltip";
-import List from "./form/List/List";
-import ListItem from "./form/List/ListItem";
-import Table from "./table/Table";
-import SwitcherClass from "./switchers/SwitcherClass";
-import Message from "./messages/Message";
-import Popup from "./popup/Popup";
+import Dropdown from "./GLUI/dropdown/Dropdown";
+import Form from "./GLUI/form/Form";
+import Input from "./GLUI/form/Input";
+import Select from "./GLUI/form/Select";
+import Tooltip from "./GLUI/Tooltip";
+import List from "./GLUI/form/List/List";
+import ListItem from "./GLUI/form/List/ListItem";
+import Table from "./GLUI/table/Table";
+import SwitcherClass from "./GLUI/switchers/SwitcherClass";
+import Message from "./GLUI/messages/Message";
+import {Panel} from "./GLUI/ui/Panel";
+import {Cards} from "./GLUI/ui/Cards";
 
 export default class App extends Component {
     constructor() {
@@ -52,33 +53,27 @@ export default class App extends Component {
                         </ul>
                     </aside>
                 </SwitcherClass>
-                {/*<div className="messages">*/}
-                <Message timer>
-                    <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit. Animi architecto
-                    atque beatae
-                    consequuntur cum ducimus ea eos eum inventore, ipsa odio quae quam, qui quod quos recusandae
-                    tempora totam voluptatem!
-                </Message>
-                {/*<Message success timer>*/}
-                {/*<strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit. Animi architecto*/}
-                {/*atque beatae*/}
-                {/*consequuntur cum ducimus ea eos eum inventore, ipsa odio quae quam, qui quod quos recusandae*/}
-                {/*tempora totam voluptatem!*/}
-                {/*</Message>*/}
-                {/*<Message error timer>*/}
-                {/*<strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit. Animi architecto*/}
-                {/*atque beatae*/}
-                {/*consequuntur cum ducimus ea eos eum inventore, ipsa odio quae quam, qui quod quos recusandae*/}
-                {/*tempora totam voluptatem!*/}
-                {/*</Message>*/}
-                {/*</div>*/}
+                <div className="messages">
+                    <Message timer>
+                        <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit. Animi architecto
+                        atque beatae
+                        consequuntur cum ducimus ea eos eum inventore, ipsa odio quae quam, qui quod quos recusandae
+                        tempora totam voluptatem!
+                    </Message>
+                    <Message success timer>
+                        <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit. Animi architecto
+                        atque beatae
+                        consequuntur cum ducimus ea eos eum inventore, ipsa odio quae quam, qui quod quos recusandae
+                        tempora totam voluptatem!
+                    </Message>
+                    <Message error timer>
+                        <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit. Animi architecto
+                        atque beatae
+                        consequuntur cum ducimus ea eos eum inventore, ipsa odio quae quam, qui quod quos recusandae
+                        tempora totam voluptatem!
+                    </Message>
+                </div>
                 <main className="content">
-                    {/*<Popup heading="Welcome!">*/}
-                    {/*Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nihil, recusandae. Aut*/}
-                    {/*consequatur labore odit porro possimus, quas quasi voluptatem. Ab distinctio eos eveniet*/}
-                    {/*impedit ipsa ipsam iure perspiciatis totam.*/}
-                    {/*<button className="btn">Ok</button>*/}
-                    {/*</Popup>*/}
                     <h1>Title 1</h1>
                     <h2>Title 2</h2>
                     <h3>Title 3</h3>
@@ -163,57 +158,54 @@ export default class App extends Component {
                         </tr>
                         </tbody>
                     </table>
-                    <div className="panel">
-                        <div className="panel-heading">Titre</div>
-                        <div className="panel-body">
-                            <Form submit="Valider" onSubmit={(values) => console.log(values)} action="#"
-                                  method="POST" onChange={(id, val, success, message) => {
-                                console.log(id, val, success, message);
-                            }}>
-                                <Input id="username" required label="Username" success
-                                       help="Ceci est un message d'aide"/>
-                                <Input rule="test" id="firstname" label="First Name" error
-                                       help="Ceci est un message d'aide"/>
-                                <Input id="lastname" label="Last Name" warning help="Ceci est un message d'aide"/>
-                                <Input id="email" label="E-mail" default help="Ceci est un message d'aide"/>
-                                <Input id="password" type="password" label="Password"/>
-                                <Input id="termOfServices" rule="true" ruleMessage="This should be checked."
-                                       type="checkbox" label="Term of Services"/>
-                                <Select id="gender" value="male" label="Gender (native)">
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                </Select>
-                                <List id="genderBis" label="Gender" error>
-                                    <ListItem value="male">Male</ListItem>
-                                    <ListItem value="female" label="Female"/>
-                                </List>
-                                <List id="month" value={['jan', 'feb']} label="Month" multiple searchable>
-                                    <ListItem value="jan" label="January"/>
-                                    <ListItem value="feb" label="February"/>
-                                    <ListItem value="mar" label="March"/>
-                                    <ListItem value="apr" label="April"/>
-                                    <ListItem value="may" label="May"/>
-                                    <ListItem value="jun" label="June"/>
-                                    <ListItem value="jul" label="July"/>
-                                    <ListItem value="aug" label="August"/>
-                                    <ListItem value="sep" label="September"/>
-                                    <ListItem value="oct" label="October"/>
-                                    <ListItem value="nov" label="November"/>
-                                    <ListItem value="dec" label="December"/>
-                                </List>
-                                <div className="form-actions">
-                                    <button className="btn">Ok</button>
-                                    <button className="btn error">Cancel</button>
-                                    <button className="btn success">Submit</button>
-                                    <button className="btn warning">Beware</button>
-                                    <button className="btn default">Some button</button>
-                                    <button className="btn dark"><span className="oi" data-glyph="moon"/>Dark side
-                                    </button>
-                                </div>
-                            </Form>
-                        </div>
-                    </div>
-                    <div className="cards">
+                    <Panel title="Titre">
+                        <Form submit="Valider" onSubmit={(values) => console.log(values)} action="#"
+                              method="POST" onChange={(id, val, success, message) => {
+                            console.log(id, val, success, message);
+                        }}>
+                            <Input id="username" required label="Username" success
+                                   help="Ceci est un message d'aide"/>
+                            <Input rule="test" id="firstname" label="First Name" error
+                                   help="Ceci est un message d'aide"/>
+                            <Input id="lastname" label="Last Name" warning help="Ceci est un message d'aide"/>
+                            <Input id="email" label="E-mail" default help="Ceci est un message d'aide"/>
+                            <Input id="password" type="password" label="Password"/>
+                            <Input id="termOfServices" rule="true" ruleMessage="This should be checked."
+                                   type="checkbox" label="Term of Services"/>
+                            <Select id="gender" value="male" label="Gender (native)">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </Select>
+                            <List id="genderBis" label="Gender" error>
+                                <ListItem value="male">Male</ListItem>
+                                <ListItem value="female" label="Female"/>
+                            </List>
+                            <List id="month" value={['jan', 'feb']} label="Month" multiple searchable>
+                                <ListItem value="jan" label="January"/>
+                                <ListItem value="feb" label="February"/>
+                                <ListItem value="mar" label="March"/>
+                                <ListItem value="apr" label="April"/>
+                                <ListItem value="may" label="May"/>
+                                <ListItem value="jun" label="June"/>
+                                <ListItem value="jul" label="July"/>
+                                <ListItem value="aug" label="August"/>
+                                <ListItem value="sep" label="September"/>
+                                <ListItem value="oct" label="October"/>
+                                <ListItem value="nov" label="November"/>
+                                <ListItem value="dec" label="December"/>
+                            </List>
+                            <div className="form-actions">
+                                <button className="btn">Ok</button>
+                                <button className="btn error">Cancel</button>
+                                <button className="btn success">Submit</button>
+                                <button className="btn warning">Beware</button>
+                                <button className="btn default">Some button</button>
+                                <button className="btn dark"><span className="oi" data-glyph="moon"/>Dark side
+                                </button>
+                            </div>
+                        </Form>
+                    </Panel>
+                    <Cards>
                         <div className="card">
                             <div className="card-heading">Titre</div>
                             <div className="card-content">
@@ -279,7 +271,7 @@ export default class App extends Component {
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </Cards>
                 </main>
             </div>
         );

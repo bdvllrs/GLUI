@@ -23,7 +23,7 @@ if (!dev) {
 
 let config = {
     entry: {
-        app: ['./src/index.js', './src/scss/app.scss']
+        app: ['./src/js/index.js', './src/scss/app.scss']
     },
     output: {
         filename: '[name].js',

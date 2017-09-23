@@ -134,6 +134,35 @@ The tooltip appears on the bottom.
 #### Props
  - `message` the message that will appear
  - `top` to make the tooltip appear on top
+ 
+ 
+ ### Popup
+ 
+```html
+<Popup heading="Titre">
+    <p>Content</p>
+</Popup> 
+```
+
+### Panel
+
+```html
+<Panel title="Titre">
+    Content
+</Panel>
+```
+#### Props
+- `default`, `success`, `error`, `warning`
+
+### Cards and Card
+
+```html
+<Cards>
+    <Card title="Titre">
+        Content
+    </Card>
+</Cards>
+```
 
 ### Switchers
 #### SwitcherClass
